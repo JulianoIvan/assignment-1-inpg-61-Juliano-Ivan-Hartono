@@ -1,0 +1,43 @@
+img{
+    width: 200px;
+    height: 250px;
+}
+
+h1{
+    border-bottom: 1px solid;
+}
+
+#navbar{
+    margin-top: 10px;
+}
+
+.barcalogo{
+    height: 200px;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.img-thumbnail{
+    border-radius: 0%;
+    width: 260px;
+    height: 200px;
+    margin-right: 15px;
+}
+
+.cover10{
+    margin-left: 15px;
+}
+
+.artikel{
+    margin-top: 20px;
+}
