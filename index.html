@@ -4,110 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://kit.fontawesome.com/b9a22499da.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <img src="assets/J.png" class="img-fluid">
-    <ul class="nav justify-content-end">
+    <ul class="nav bg-light justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">HOME</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+          <a class="nav-link" href="#">PRODUCT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" id="btnContact">Contact</a>
+          <a class="nav-link" href="#">GALLERY</a>
         </li>
-        <button type="button" class="btn btn-outline-light">Resume</button>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">INVENTORY</a>
+        </li>
     </ul>
-    <div class="container">
-        <img src="assets/background.png" class="img-fluid bg-img">
-        <div class="introduce" id="introduce">
-            <span>Hi There! my name is</span>
-            <h1>Juliano Ivan Hartono.</h1>
-            <p>I'm a Front End Developer and Graphic Designer.<br>
-                I design and code beatifully simple things, and I love what I do<br>
-                Currently, i'm focused on Front End Web Developer
-            </p>
-            <p>I also love playing football,<br>
-                and I have a favorite club namely Fc Barcelona
-            </p>
-            <a href="about.html" class="link-barca">More about Fc Barcelona <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <div class="container main bg-light">
+        <img src="assets/images.png" class="img-fluid">
+        <div class="nameAndButton">
+            <h4 class="nama" id="textNama">Juliano Ivan Hartono</h4>
+            <span>Front End Designer</span>
+            <div class="button">
+                <button class="btn btn-success" id="btnEdit">EDIT</button>
+                <button class="btn btn-outline-primary">RESUME</button>
+            </div>
+        </div>
+        <div class="data">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="head-data">Availabillity</h5>
+                    </div>
+                    <div class="col">
+                        <p id="textAvailabillity">Full Time</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="head-data">Usia</h5>
+                    </div>
+                    <div class="col">
+                        <p id="textAge">16</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="head-data">Lokasi</h5>
+                    </div>
+                    <div class="col">
+                        <p id="textLokasi">Semarang, Indonesia</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="head-data">Pengalaman</h5>
+                    </div>
+                    <div class="col">
+                        <p id="textPengalaman">2</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5 class="head-data">Email</h5>
+                    </div>
+                    <div class="col">
+                        <p id="textEmail">Developer@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container form-data">
-        <table class="table table-borderless">
-            <tbody>
-                <tr>
-                    <th>Availability:</th>
-                    <td>Full Time</td>
-                </tr>
-                <tr>
-                    <th></th>
-                </tr>   
-                <tr>
-                    <th>Usia:</th>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>Lokasi:</th>
-                    <td>Semarang</td>
-                </tr>
-                <tr>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>Pengalaman:</th>     
-                    <td>0</td>              
-                </tr>
-                <tr>
-                    <th></th>
-                </tr>
-                <tr>
-                    <th>Email:</th>
-                    <td>ivanoivan139@gmail.com</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="form top-0 end-0">
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Nama">
-                <label for="floatingInput">Nama</label>
+    <div class="container form bg-light" id="formData" style="display: none;">
+        <form>
+            <div class="mb-3">
+                <label for="inputNama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="inputNama" placeholder="" name="nama" required>
             </div>
-            <div class="form-floating">
-                <select class="form-select" id="floatingSelect">
-                    <option selected disabled>Availability</option>
-                    <option>Full Time</option>
-                    <option>Part Time</option>
-                </select>
-                <label for="floatingSelect">Availability</label>
+            <div class="mb-3">
+                <label for="inputAvailabillity" class="form-label">Availabillity</label>
+                <input type="text" class="form-control" id="inputAvailabillity" placeholder="" name="availabillity" required>
             </div>
-            <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInput" placeholder="Age">
-                <label for="floatingInput">Age</label>
+            <div class="mb-3">
+                <label for="inputAge" class="form-label">Age</label>
+                <input type="number" class="form-control" id="inputAge" placeholder="" name="age" required>
             </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Lokasi" id="floatingTextarea2"></textarea>
-                <label for="floatingTextarea2">Lokasi</label>
+            <div class="mb-3">
+                <label for="inputLokasi" class="form-label">Lokasi</label>
+                <textarea class="form-control" id="inputLokasi" placeholder="" name="lokasi" required></textarea>
             </div>
-            <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInput" placeholder="Year Experience" min="0">
-                <label for="floatingInput">Year Experience</label>
+            <div class="mb-3">
+                <label for="inputPengalaman" class="form-label">Years Experience</label>
+                <input type="number" class="form-control" id="inputPengalaman" placeholder="" name="pengalaman" required>
             </div>
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                <label for="floatingInput">Email</label>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="" value="" name="email" required>
             </div>
-            <button type="button" class="btn btn-success save-btn">Save</button>
-            <button type="button" class="btn btn-danger cancel-btn">Cancel</button>
-        </div>
+            <div class="col-12 btn-submit">
+                <button type="submit" class="btn btn-success submit" id="btnSubmit">Submit</button>
+            </div>
+        </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
